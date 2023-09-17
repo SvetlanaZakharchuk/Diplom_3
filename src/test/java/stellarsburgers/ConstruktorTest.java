@@ -9,6 +9,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
 import static stellarsburgers.Driver.WebDriverCreator.createChromeDriver;
+import static stellarsburgers.Driver.WebDriverCreator.createYandexDriver;
 
 public class ConstruktorTest {
     private final String expectedClassName = "tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect";
@@ -16,10 +17,12 @@ public class ConstruktorTest {
 
     @Before
     public void setUp() {
+
         driver = createChromeDriver();
+
     }
 
-    //проверяем переход по ссылке Булки !!!!
+    //проверяем переход по ссылке Булки
     @Test
     @DisplayName("checkBunsLinkTest")
     public void checkBunsLinkTest() {
